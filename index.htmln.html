@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nazanin 💙</title>
+
+    <!-- Editorial fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            background: #0a0f1a;
+            color: #e6ecff;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header small {
+            letter-spacing: 4px;
+            font-size: 10px;
+            opacity: 0.5;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            margin: 10px 0;
+            font-weight: 500;
+        }
+
+        .header p {
+            letter-spacing: 3px;
+            font-size: 11px;
+            opacity: 0.6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr;
+            gap: 18px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 18px;
+            padding: 20px;
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .photo {
+            background: url('naz.jpeg') center/cover;
+            height: 320px;
+            border-radius: 18px;
+        }
+
+        .big {
+            font-size: 42px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .muted {
+            opacity: 0.6;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .note {
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .tag {
+            display: inline-block;
+            border: 1px solid rgba(120, 150, 255, 0.4);
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin: 4px;
+            font-size: 11px;
+            opacity: 0.8;
+        }
+
+        .quote {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 8px 14px;
+            border-radius: 20px;
+            border: none;
+            background: #5a7cff;
+            color: white;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .hidden {
+            display: none;
+            margin-top: 10px;
+            font-size: 13px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <small>A NOTE FOR</small>
+            <h1>Nazanin</h1>
+            <p>TWENTY · 2025</p>
+        </div>
+
+        <div class="grid">
+
+            <div class="card photo"></div>
+
+            <div class="card">
+                <div class="muted">THE BIG ONE</div>
+                <div class="big">20</div>
+                <div class="muted">years of being amazing</div>
+            </div>
+
+            <div class="card note">
+                <div class="muted">A NOTE FROM RANIAH</div>
+                <p>
+                    Happy birthday, Naz.<br><br>
+
+                    20 looks so good on you — no surprise there.<br><br>
+
+                    You're one of those people who makes every room better. Calm, effortlessly chic, always with good
+                    music on.<br><br>
+
+                    I'm genuinely so happy to know you and even happier I get to call you my friend.<br><br>
+
+                    Here's to your 20s being everything — adventure, good playlists, and all the things you
+                    deserve.<br><br>
+
+                    Love you lots. 🎂<br><br>
+
+                    with love, Raniah 💙<br><br>
+
+                    تولدت مبارک نازنین
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="muted">HER VIBE</div><br>
+                <span class="tag">calm</span>
+                <span class="tag">chic</span>
+                <span class="tag">wanderer</span>
+                <span class="tag">cultured</span>
+                <span class="tag">effortless</span>
+            </div>
+
+            <div class="card">
+                <div class="muted">WISHES FOR YOUR 20s</div>
+                <ul>
+                    <li>Every city on your list ✈️</li>
+                    <li>A future as bright as you are</li>
+                    <li>Always surrounded by people who get it</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="muted">THE WORLD</div>
+                <p>is waiting<br>for you</p>
+            </div>
+
+            <div class="card quote">
+                "she was born to roam beautiful places"
+            </div>
+
+            <div class="card">
+                <button onclick="showSecret()">open 💌</button>
+                <div id="secret" class="hidden">
+                    you mean everything to me naz 💙
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function showSecret() {
+            document.getElementById("secret").style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
